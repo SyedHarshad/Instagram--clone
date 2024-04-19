@@ -12,6 +12,7 @@ import {
   PlusSquare,
   Search,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [visibility, Setvisibility] = useState("hidden");
@@ -37,42 +38,54 @@ export function Navbar() {
               ></img>
             </div>
             <div className=" flex flex-col">
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className=" flex flex-row gap-4">
-                  <Home color="white"></Home>
-                  <p className=" text-white ">Home</p>
+              <Link to="/home">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className=" flex flex-row gap-4">
+                    <Home color="white"></Home>
+                    <p className=" text-white ">Home</p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className=" flex flex-row gap-4">
-                  <Search color="white"></Search>
-                  <p className=" text-white ">Search</p>
+              </Link>
+              <Link to="/search">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className=" flex flex-row gap-4">
+                    <Search color="white"></Search>
+                    <p className=" text-white ">Search</p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className=" flex flex-row gap-4">
-                  <Compass color="white"></Compass>
-                  <p className=" text-white ">Explore</p>
+              </Link>
+              <Link to="/explore">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className=" flex flex-row gap-4">
+                    <Compass color="white"></Compass>
+                    <p className=" text-white ">Explore</p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className="flex flex-row gap-4">
-                  <Film color="white"></Film>
-                  <p className=" text-white ">Reels</p>
+              </Link>
+              <Link to="/reels">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className="flex flex-row gap-4">
+                    <Film color="white"></Film>
+                    <p className=" text-white ">Reels</p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className="flex flex-row gap-4">
-                  <MessageCircle color="white"></MessageCircle>
-                  <p className=" text-white ">Message</p>
+              </Link>
+              <Link to="/messsage">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className="flex flex-row gap-4">
+                    <MessageCircle color="white"></MessageCircle>
+                    <p className=" text-white ">Message</p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
-                <div className="flex flex-row gap-4">
-                  <Heart color="white"></Heart>
-                  <p className=" text-white ">Notifications</p>
+              </Link>
+              <Link to="/notification">
+                <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
+                  <div className="flex flex-row gap-4">
+                    <Heart color="white"></Heart>
+                    <p className=" text-white ">Notifications</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer">
                 <div className="flex flex-row gap-4">
                   <PlusSquare color="white"></PlusSquare>
