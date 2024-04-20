@@ -9,6 +9,7 @@ import Menu from "./Component/Popup/More_menu";
 import { Explore_page } from "./Pages/Explore/Explore_page";
 import { Route, Routes } from "react-router-dom";
 import Login_page from "./Pages/LogIn/login";
+import SignUp from "./Pages/Signup/SignUp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +18,8 @@ function App() {
     <>
       {/* <p className=" text-2xl text-red-500">Syed Harshad Babu</p> */}
 
-      <Login_page></Login_page>
+      {/* <Login_page></Login_page> */}
+      <SignUp></SignUp>
 
       {/* <div className="flex flex-row">
         <Navbar></Navbar>
