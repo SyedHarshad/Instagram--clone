@@ -1,5 +1,5 @@
 import logo from "./Asserts/Instagram_blackcolor.png";
-import facebook_image from "./Asserts/facebook_icon.jpg";
+import facebook_image from "./Asserts/Facebook_Lite_logo.png";
 import google_play from "./Asserts/google_play.png";
 import microsoft_badge from "./Asserts/Get_it_from_Microsoft_Badge.png";
 
@@ -19,7 +19,7 @@ function SignUp() {
           </p>
           <p className=" font-semibold text-gray-500">from your friends.</p>
           <div className=" flex flex-row justify-center items-center w-64 h-8 gap-2 bg-blue-400 rounded-md mt-4 hover:cursor-pointer">
-            <img src={facebook_image} alt="facebook_image" width="20" />
+            <img src={facebook_image} alt="facebook_image" width="17" />
             <p className=" text-sm font-semibold text-white">
               Log in with Facebook
             </p>
@@ -67,12 +67,12 @@ function SignUp() {
             <img
               src={google_play}
               alt="Google_play"
-              className=" object-fill h-14"
+              className=" object-fill h-14 hover:cursor-pointer"
             />
             <img
               src={microsoft_badge}
               alt="microsoft_badge"
-              className=" object-fill h-10"
+              className=" object-fill h-10 hover:cursor-pointer"
             />
           </div>
         </div>
