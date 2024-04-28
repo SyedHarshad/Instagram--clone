@@ -51,6 +51,23 @@ function SignUp() {
               className=" w-64 h-9 border rounded p-2 text-xs"
             />
           </div>
+          <div className=" py-4">
+            <p className=" text-xs text-center  text-gray-500">
+              People who use our service may have uploaded
+            </p>
+            <p className=" text-xs text-center  text-gray-500">
+              your contact information to Instagram. Learn
+            </p>
+            <p className="text-xs text-center  text-gray-500">More</p>
+          </div>
+          <div>
+            <p className=" text-xs text-center  text-gray-500">
+              By signing up, you agree to our Terms , Privacy
+            </p>
+            <p className=" text-xs text-center  text-gray-500">
+              Policy and Cookies Policy .
+            </p>
+          </div>
           <button className=" w-64 h-8 bg-blue-400 text-white rounded-md font-semibold mt-4">
             Sign up
           </button>
