@@ -10,7 +10,9 @@ function Menu_items(props) {
   return (
     <>
       <div
-        className={` bg-neutral-800 fixed z-10 w-64 rounded-xl ${props.Visibility} `}
+        className={` bg-neutral-800 fixed z-10 w-64 rounded-xl ${
+          props.Visibility ? "visible" : "hidden"
+        }`}
         style={{ margin: "250px 0 0 10px", height: "410px" }}
       >
         <div className=" px-2 py-2">

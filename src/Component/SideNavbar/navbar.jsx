@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Menu_items from "../Popup/More_menu";
 import image1 from "./Assests/Instagram_whitecolor.png";
 import {
@@ -15,14 +15,23 @@ import {
 import { Link } from "react-router-dom";
 
 export function Navbar() {
-  const [visibility, Setvisibility] = useState("hidden");
+  const [visibility, Setvisibility] = useState(false);
+  let menuref = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuref.current.contains(e.target)) {
+        Setvisibility(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+    };
+  });
 
   const ClickHandler = () => {
-    if (visibility === "visible") {
-      Setvisibility("hidden");
-    } else {
-      Setvisibility("visible");
-    }
+    Setvisibility(!visibility);
   };
 
   return (
@@ -110,6 +119,7 @@ export function Navbar() {
               <div
                 className="p-3 my-1 hover:bg-neutral-800 rounded-md cursor-pointer"
                 onClick={ClickHandler}
+                ref={menuref}
               >
                 <div className="flex flex-row gap-4">
                   <Menu color="white"></Menu>

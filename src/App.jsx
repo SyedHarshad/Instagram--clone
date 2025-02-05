@@ -19,9 +19,9 @@ function App() {
       {/* <p className=" text-2xl text-red-500">Syed Harshad Babu</p> */}
 
       {/* <Login_page></Login_page> */}
-      <SignUp></SignUp>
+      {/* <SignUp></SignUp> */}
 
-      {/* <div className="flex flex-row">
+      <div className="flex flex-row">
         <Navbar></Navbar>
         <Routes>
           <Route path="/home" element={<Home />} />
@@ -29,12 +29,11 @@ function App() {
           <Route path="/explore" element={<Explore_page />} />
           <Route path="/login" element={<Login_page />} />
         </Routes>
-
         {/* <Menu></Menu> */}
-      {/* <Home></Home> */}
-      {/* <Reels_page></Reels_page> */}
-      {/* <Explore_page></Explore_page>
-      </div>  */}
+        {/* <Home></Home>
+        <Reels_page></Reels_page>
+        <Explore_page></Explore_page> */}
+      </div>
     </>
   );
 }
